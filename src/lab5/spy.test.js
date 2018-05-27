@@ -22,5 +22,6 @@ describe('Test runCallback', () => {
         runCallback(spyCallback)
 
         expect(spyCallback.callCount).toEqual(1)
+        expect(spyCallback.calledOnceWith({foo: 'foo'})).toEqual(true)
     })
 })
