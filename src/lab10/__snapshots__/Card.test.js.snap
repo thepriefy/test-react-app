@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Card component with props Match it snapshot 1`] = `
+<div>
+  <h3
+    className="card_header"
+  >
+    This is header
+  </h3>
+  <p
+    className="card_content"
+  >
+    This is content
+  </p>
+  <small
+    className="card_footer"
+  >
+    This is footer
+  </small>
+</div>
+`;
