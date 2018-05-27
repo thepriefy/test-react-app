@@ -22,3 +22,9 @@ it('Should return 2 when input is 2 and 1', () => {
     expect(actual).toEqual(2)
 })
 
+
+it('Should return Infinity when input is 2 and 0', () => {
+    const actual = divide(2, 0)
+    expect(actual).toEqual(Infinity)
+})
+
