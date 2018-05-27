@@ -7,10 +7,13 @@
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4"
   },
+  "devDependencies": {
+    "sinon": "5.0.*"
+  },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --verbose",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test --env=jsdom --verbose"
   }
 }
