@@ -4,7 +4,7 @@ import {shallow} from 'enzyme'
 import Card from './Card'
 
 describe('Test initial state', () => {
-    it('Should have state text is "This is title."', () => {
+    it('Should have state text equal to "This is title."', () => {
         const props = {
             header_text: 'This is header',
             content_text: 'This is content',
@@ -15,7 +15,7 @@ describe('Test initial state', () => {
         expect(wrapper.state()).toHaveProperty('title', 'This is title.');
     })
 
-    it('Should have state item_list is empty array', () => {
+    it('Should have state item_list equal to empty array', () => {
         const props = {
             header_text: 'This is header',
             content_text: 'This is content',
