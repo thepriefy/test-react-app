@@ -1,7 +1,8 @@
-import {sum, minus, times, divide} from './calculator'
-// import cal from './calculator'
+import {sum, minus, times, divide} from './calculator'  // when using 'export {sum, minus, times, divide}'
+// import cal from './calculator'   // when using "export default {sum, minus, times, divide}"
 
 it('Should return 3 when input is 1 and 2', () => {
+    // const actual = cal.sum(1, 2)     // when using "import cal from './calculator'"
     const actual = sum(1, 2)
     expect(actual).toEqual(3)
 })
