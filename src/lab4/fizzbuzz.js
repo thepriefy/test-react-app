@@ -1,14 +1,12 @@
 const fizzbuzz = (num = 15) => {
-    let result = num
+    if(num%3 === 0 && num%5 === 0)
+        return 'fizz buzz'
+    else if(num%3 === 0)
+        return 'fizz'
+    else if(num%5 === 0)
+        return 'buzz'
 
-    if(result%3 === 0 && result%5 === 0)
-        result = 'fizz buzz'
-    else if(result%3 === 0)
-        result = 'fizz'
-    else if(result%5 === 0)
-        result = 'buzz'
-
-    return result
+    return num
 }
 
 export default {fizzbuzz}
