@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test styled-component Should have color blue when primary prop exist 1`] = `
+.c0 {
+  color: blue;
+}
+
+<button
+  className="c0"
+/>
+`;
