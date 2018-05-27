@@ -9,7 +9,7 @@ describe('Test Component Life cycle', () => {
         const instance = wrapper.instance();
         const mockFetchPost = sinon.mock(instance).expects('fetchImage').once();
 
-        instance.componentDidMount();
+        instance.componentDidMount();   // access function in component
 
         mockFetchPost.verify();
     })
