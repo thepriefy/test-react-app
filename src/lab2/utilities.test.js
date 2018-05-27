@@ -9,3 +9,8 @@ it('Should return array of 3 when the input is "yes"', () => {
     const arr = util.getArrayOf3Items('yes')
     expect(arr).toHaveLength(3);
 })
+
+it('Should return object with "name" property and value equal "React" when the input is "yes"', () => {
+    const arr = util.getObjWithNameProperty('yes')
+    expect(arr).toHaveProperty('name', 'React');
+})

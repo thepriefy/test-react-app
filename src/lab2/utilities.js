@@ -9,4 +9,17 @@ const getArrayOf3Items = (input) => {
         return [0]
 }
 
-export default {sum, getArrayOf3Items}
+const getObjWithNameProperty = (input) => {
+    if(input === 'yes')
+        return {
+            'name': 'React',
+            'date': '26 - 27 May 2018'
+        }
+
+    else
+        return {
+            'date': '26 - 27 May 2018'
+        }
+}
+
+export default {sum, getArrayOf3Items, getObjWithNameProperty}
