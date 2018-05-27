@@ -2,6 +2,20 @@ import sinon from 'sinon'
 import {getRandomNumber} from "./stub"
 
 describe('Test stub', () => {
+    let stubCallback
+
+    beforeAll(() => {
+        stubCallback = sinon.stub()
+    })
+
+    afterAll(() => {
+        stubCallback.restore()
+    })
+
+    afterEach(() => {
+        stubCallback.resetHistory()
+    })
+    
     it('Should run stub with callsFake correctly', () => {
         const stubRandom = sinon.stub(Math, 'random').callsFake(() => 0.55)
 
